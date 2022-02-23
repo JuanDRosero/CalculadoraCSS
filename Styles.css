@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(222,26%,31%);
+    font-family: 'Spartan', sans-serif;
+}
+.calculadora{
+    width: 400px;
+    height: 500px;
+    margin:50px  auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 12.5% 25% 62.5%;
+}
+.calNombre{
+    padding: 5%;
+    color: aliceblue;
+}
+.calTema{
+    padding: 5%;
+    color: aliceblue;
+    text-align: end;
+}
+.calPantalla{
+    background-color:hsl(224, 36%, 15%);
+    margin: 5px;
+    padding: 15px;
+    grid-column-end: span 2;
+    text-align: end;
+    border-radius: 5px;
+    color: aliceblue;
+}
+.calBotones{
+    background-color: hsl(223, 31%, 20%);
+    margin: 5px 5px;
+    padding: 15px;
+    border-radius: 5px;
+    grid-column-end: span 2;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+.button{
+    border: none;
+    color:hsl(225, 21%, 49%);
+    background-color:hsl(30, 25%, 89%) ;
+    box-shadow: 2px hsl(224, 28%, 35%);
+    padding: 5px auto;
+    margin:5px;
+    text-align: center;
+    text-decoration:solid;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.buttonGrande{
+    grid-column-end: span 2;
+}
+.bgGray{
+    background-color:hsl(225, 21%, 49%) ;
+    color: hsl(30, 25%, 89%);
+}
+.bgRed{
+    background-color: hsl(6, 63%, 50%);
+    color: hsl(30, 25%, 89%);
+}
+@media (max-width:375px) {
+    .calculadora{
+        width: 90%;
+        height: 100%;
+        margin: 15px;
+    }
+    
+}
+@media  (min-width: 376px) and (max-width:600px) {
+    .calculadora{
+        width: 70%;
+        height: 100%;
+        margin: 15px auto;
+    }
+    
+}
